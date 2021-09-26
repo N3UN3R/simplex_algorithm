@@ -3,7 +3,6 @@ This repository contains an implementation of the simplex algorithm for the BloG
 
 
 getHouseholdData.py
-
 - Enthält Funktionen, welche Listen der
   aktiven Consumer- und Producer-Haushalte,
   sowie Python-Dictionarys mit aktuellen
