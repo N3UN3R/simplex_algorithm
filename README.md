@@ -27,9 +27,8 @@ orderedDemandSupplyValues.py
    der des Kostenvektors entspricht.
 
 
-revisedSimplex.py
--  Führt den
-   revidierten Simplex-Algorithmus durch 
+simplex_main.py
+-  Führt den Simplex-Algorithmus durch 
    Enthält Funktionen, welche die erforderlichen
    Nebenbedingungen des linearen
    Programms erstellen.
