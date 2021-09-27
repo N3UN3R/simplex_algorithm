@@ -28,7 +28,7 @@ simplex_main.py
 -  builds righthandside constraints b
 -  ensures proportional fairness
 
-#needed files
+# needed files
 - AssetListe.json
 - tradingCost_prosumers_to_all_households_nested.json
 - pairsAndReductions.json (this is only needed to analyze results. not the algorithm itself)
