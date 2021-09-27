@@ -1,40 +1,36 @@
-# simplex_algorithm
-This repository contains an implementation of the simplex algorithm for the BloGPV-Project
+# simplex algorithm
+This repository contains an implementation of a simplex algorithm for p2p elcectricity trading
 
 
 getHouseholdData.py
-- Enthält Funktionen, welche Listen der
-  aktiven Consumer- und Producer-Haushalte,
-  sowie Python-Dictionarys mit aktuellen
-  Produktions- und Nachfragewerten erstellen
-
+- contains functions that generates list of currently
+  active households and python dictionarys for current
+  supply and demand values of producer and consumer households
 
 currentlyActiveCostDict.py
-- Erstellt ein Kosten-Dictionary für alle im
-  jeweiligen Intervall aktiven Haushaltepaare
-  und bringt dieses in die notwendige Form
+- builds a cost-dictionary for all currently active households
+  and ensures the needed format
 
 
 constraintMatrix.py
--  Enthält Funktionen, welche die erforderlichen
-   Nebenbedingungen des linearen
-   Programms erstellen.
-
+- contains functions that build the needed constraints for
+  the linear programming problem
 
 orderedDemandSupplyValues.py
--  Gewährleistet, dass die Reihenfolge
-   der Restriktionen des linearen Programms
-   der des Kostenvektors entspricht.
+-  ensures that the order of the constraints and the supply
+   and the demand dictionaries is the same
 
 
 simplex_main.py
--  Führt den Simplex-Algorithmus durch 
-   Enthält Funktionen, welche die erforderlichen
-   Nebenbedingungen des linearen
-   Programms erstellen.
-   1. Erstellt eine Zielfunktion
-   2. Analysiert welcher Fall vorliegt
-   3. Erstellt einen Nebenbedindungsvektor b
-      unter Gewährleistung von proportionaler
-      Fairness
-   4. Führt den revisedSimplex Algorithmus aus
+-  runs the interior-point algorithm
+-  builds the objective function
+-  analyses if demand > supply, demand < supply or demand = supply
+-  builds righthandside constraints b
+-  ensures proportional fairness
+
+#needed files
+- AssetListe.json
+- tradingCost_prosumers_to_all_households_nested.json
+- pairsAndReductions.json (this is only needed to analyze results. not the algorithm itself)
+
+This algorithm accepts household data which is structured like the API data
