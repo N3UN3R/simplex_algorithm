@@ -22,7 +22,7 @@ orderedDemandSupplyValues.py
 
 
 simplex_main.py
--  runs the interior-point algorithm
+-  runs the simplex algorithm
 -  builds the objective function
 -  analyses if demand > supply, demand < supply or demand = supply
 -  builds righthandside constraints b
